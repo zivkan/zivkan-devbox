@@ -1,0 +1,11 @@
+$schema: "1.0"
+name: devbox-customization
+tasks:
+  - name: powershell
+    parameters:
+      command: |
+        mkdir c:\src
+  - name: winget
+    parameters:
+      package: Microsoft.VisualStudioCode
+      runAsUser: true
